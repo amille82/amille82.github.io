@@ -1,0 +1,22 @@
+body {
+	background: #963535;
+}
+
+h1 {
+	margin: 5;
+	padding: 5px;
+	font-family: Georgia;
+	font-size: 30pt;
+	font-weight: 100;
+	text-decoration: underline;
+	text-transform: uppercase;
+	font-style: italic;
+	letter-spacing: .1em;
+	color: #ffffff;
+	background: #cc7864;
+	text-align: center;
+}
+
+a {
+	color: white;
+}
