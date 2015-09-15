@@ -1,0 +1,62 @@
+.nav {
+	padding: 0;
+	list-style: none;
+}
+
+.nav li {
+	display: inline-block; /*lists horizontal*/
+}
+
+.nav a {
+	display: inline-block;
+	position: relative;
+	padding: 1em;
+	background: pink;
+	transition: all 1s linear;
+	color: black;
+}
+
+.nav a:hover {
+	color: white;
+	background: grey;
+	transition-duration: .2s;
+}
+
+.nav a:after { /* adds custom content to the html following an element */
+	content: '';
+	display: block;
+	position: absolute;
+	top:80%;
+	left: 0;
+	width: 0%;
+	height: 10px;
+	background: black;
+	transition: all .3s ease-in;
+}
+
+.nav a:hover:after {
+	width: 100%;
+}
+
+.nav.fit { /*targets all elements that have both the nav and fit classes*/
+	display: table;
+	width: 100%;
+}
+
+.nav.fit li {
+	display: table-cell;
+	padding: 1px;
+}
+
+.nav.fit a {
+	display: block;
+	text-align: center;
+}
+
+.bar {
+
+}
+
+#primary-nav {
+
+}
