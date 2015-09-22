@@ -95,3 +95,33 @@ div.container {
 	    padding:20px;
 			border-left: 100px solid #f29272;
 }
+
+
+
+p #michele {
+	margin-left: 420px;
+	margin-top: -50px;
+	width: 500px;
+	height: 175px;
+	overflow: auto;
+	font-size: 11px;
+	font-family: sans-serif;
+	color: #f6f6f6;
+}
+
+#michelelink {
+	color: #f6f6f6;
+	font-weight: bold;
+}
+
+#michelelink:hover {
+	color: #394042;
+	font-style: italic;
+}
+
+div.container3 {
+	    background-color: #707c80;
+	    margin:20px;
+	    padding:20px;
+			border-left: 100px solid #394042;
+}
