@@ -1,24 +1,54 @@
+body {
+	margin: 0;
+	background: lightgrey;
+}
+
+.container {
+	width: 90%;
+	max-width: 760px;
+	margin: 0 auto; /* 0 for top and bottom, auto sets left and right for centering*/
+	
+}
+
+.clear {
+	overflow: hidden;
+}
+
+.masthead {
+	background: darkgrey;
+}
+
+img,
+video
+iframe {
+	max-width: 100%; /* prevents images/videos from exceeding the width of their container and scale down with it */
+	height: auto;
+}
+
+
+/* display: inline-block lists horizontal */
+
 .nav {
 	padding: 0;
 	list-style: none;
 }
 
 .nav li {
-	display: inline-block; /*lists horizontal*/
+	display: block; 
 }
 
 .nav a {
-	display: inline-block;
+	display: block;
 	position: relative;
 	padding: 1em;
-	background: pink;
+	background: yellow;
 	transition: all 1s linear;
 	color: black;
 }
 
 .nav a:hover {
 	color: white;
-	background: grey;
+	background: black;
 	transition-duration: .2s;
 }
 
@@ -30,7 +60,7 @@
 	left: 0;
 	width: 0%;
 	height: 10px;
-	background: black;
+	background: yellow;
 	transition: all .3s ease-in;
 }
 
@@ -38,25 +68,47 @@
 	width: 100%;
 }
 
-.nav.fit { /*targets all elements that have both the nav and fit classes*/
-	display: table;
-	width: 100%;
+@media (min-width: 500px) {
+	.nav.fit { /*targets all elements that have both the nav and fit classes*/
+		display: table;
+		width: 100%;
+	}
+
+	.nav.fit li {
+		display: table-cell;
+		padding: 1px;
+	}
+
+	.nav.fit a {
+		display: block;
+		text-align: center;
+	}
 }
 
-.nav.fit li {
-	display: table-cell;
-	padding: 1px;
+
+.main-content {
+	background: white;
 }
 
-.nav.fit a {
-	display: block;
-	text-align: center;
+.sub-content {
+	background: white;
 }
 
-.bar {
-
-}
-
-#primary-nav {
-
+@media (min-width: 500px) {
+	.main-content {
+		float: left;
+		width: 60%;
+		margin-left: 20%;
+	}
+	
+	.sub-content {
+		float: left;
+		width: 20%;
+		margin-left: -80%;
+	}
+	
+	.third-content {
+		float: left;
+		width: 20%;
+	}
 }
