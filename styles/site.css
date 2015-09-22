@@ -125,3 +125,59 @@ div.container3 {
 	    padding:20px;
 			border-left: 100px solid #394042;
 }
+
+
+
+
+
+.container {
+	width: 90%;
+	max-width: 760px;
+	margin: 0 auto; /* 0 for top and bottom, auto sets left and right for centering*/
+	
+}
+
+.masthead {
+	background: darkgrey;
+}
+
+.nav {
+	padding: 0;
+	list-style: none;
+}
+
+.nav li {
+	display: inline-block; 
+	width: auto;
+}
+
+.nav a {
+	display: block;
+	position: relative;
+	padding: 1em;
+	background: yellow;
+	transition: all 1s linear;
+	color: black;
+}
+
+.nav a:hover {
+	color: white;
+	background: black;
+	transition-duration: .2s;
+}
+
+.nav a:after { /* adds custom content to the html following an element */
+	content: '';
+	display: block;
+	position: absolute;
+	top:80%;
+	left: 0;
+	width: 0%;
+	height: 10px;
+	background: yellow;
+	transition: all .3s ease-in;
+}
+
+.nav a:hover:after {
+	width: 100%;
+}

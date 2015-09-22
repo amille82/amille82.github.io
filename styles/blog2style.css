@@ -1,6 +1,6 @@
 body {
 	margin: 0;
-	background: lightgrey;
+	background: #4c464e;
 }
 
 .container {
@@ -15,7 +15,8 @@ body {
 }
 
 .masthead {
-	background: darkgrey;
+	background: #262429;
+	margin-top: -20px;
 }
 
 img,
@@ -41,14 +42,14 @@ iframe {
 	display: block;
 	position: relative;
 	padding: 1em;
-	background: yellow;
+	background: #e63158;
 	transition: all 1s linear;
 	color: black;
 }
 
 .nav a:hover {
 	color: white;
-	background: black;
+	background: #961e4b;
 	transition-duration: .2s;
 }
 
@@ -60,7 +61,7 @@ iframe {
 	left: 0;
 	width: 0%;
 	height: 10px;
-	background: yellow;
+	background: #fc4046;
 	transition: all .3s ease-in;
 }
 
@@ -85,30 +86,63 @@ iframe {
 	}
 }
 
+h1 {
+	margin-left: 10px;
+	margin-top: -0px;
+
+}
+
+h2 {
+	text-align: center;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.sidebar {
+	padding: 0;
+	margin: 5px;
+	list-style: none;
+}
+
+.sidebar li {
+	display: block; 
+}
+
+.sidebar a {
+	display: block;
+	position: relative;
+	padding: 1em;
+	background: yellow;
+	transition: all 1s linear;
+	color: black;
+}
+
+
+.sidebar a:hover {
+	color: white;
+	background: #fd8e62;
+	transition-duration: .2s;
+}
+
 
 .main-content {
 	background: white;
+	padding: 5px;
 }
 
 .sub-content {
-	background: white;
+	background: #e8edec;
 }
 
 @media (min-width: 500px) {
 	.main-content {
-		float: left;
-		width: 60%;
-		margin-left: 20%;
+		float: right;
+		width: 75%;
 	}
 	
 	.sub-content {
 		float: left;
-		width: 20%;
-		margin-left: -80%;
+		width: 22%;
 	}
 	
-	.third-content {
-		float: left;
-		width: 20%;
-	}
 }
