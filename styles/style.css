@@ -32,6 +32,8 @@ iframe {
 .nav {
 	padding: 0;
 	list-style: none;
+	font-family: "Helvetica", sans-serif;
+	font-size: 11pt;
 }
 
 .nav li {
@@ -45,6 +47,7 @@ iframe {
 	background: #e63158;
 	transition: all 1s linear;
 	color: black;
+	text-decoration: none;
 }
 
 .nav a:hover {
@@ -89,16 +92,22 @@ iframe {
 h1 {
 	margin-left: 10px;
 	margin-top: -0px;
-
+	font-family: "Helvetica", sans-serif;
+	font-size: 18pt;
 }
 
 h2 {
 	text-align: center;
-	margin-top: 0px;
+	margin-top: 5px;
 	margin-bottom: 0px;
+	font-family: "Helvetica", sans-serif;
+	font-size: 14pt;
+	letter-spacing: .1em;
 }
 
 .sidebar {
+	font-family: "Helvetica", sans-serif;
+	font-size: 11pt;
 	padding: 0;
 	margin: 5px;
 	list-style: none;
@@ -112,23 +121,26 @@ h2 {
 	display: block;
 	position: relative;
 	padding: 1em;
-	background: yellow;
+	line-height: .4em;
+	background: #e4345b;
 	transition: all 1s linear;
 	color: black;
+	text-decoration: none;
 }
 
 .sub-side {
-line-height: .2em;
 	display: block;
 	margin-left: -10px;
 }
 .sub-side a {
 	text-decoration: none;
+	background: #94214c;
 }
+
 
 .sidebar a:hover {
 	color: white;
-	background: #fd8e62;
+	background: #f9424b;
 	transition-duration: .2s;
 }
 
@@ -139,7 +151,8 @@ line-height: .2em;
 }
 
 .sub-content {
-	background: #e8edec;
+	background: #262429;
+	color: #ffffff;
 }
 
 @media (min-width: 500px) {
@@ -156,9 +169,6 @@ line-height: .2em;
 }
 
 
-
-
-
 .main-content a {
 	color: #e63158;
 	text-decoration: none;
@@ -168,4 +178,6 @@ line-height: .2em;
 .main-content p {
 	padding: 10px;
 	color: #4c464e;
+	font-family: "Helvetica", sans-serif;
+	font-size: 10pt;
 }
